@@ -18,7 +18,7 @@ function compra_de_moneda(moneda,monto){
 }
 let moneda = prompt("Ingrese: usd (para dolares), ar (para pesos argentinos), br (para reales) o salir");
 
-while(compra_o_ventas!="salir"){
+while(moneda!="salir"){
     let monto = parseInt(prompt("Ingrese un monto a convertir"));
     let conversion= compra_de_moneda(moneda,monto);
     if(typeof(monto)=="number"){
@@ -30,6 +30,6 @@ while(compra_o_ventas!="salir"){
 
 }  
 
-if(compra_o_ventas == "salir"){
+if(moneda == "salir"){
     console.log("Gracias por utilizar el convertor");
 }  
