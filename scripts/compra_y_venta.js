@@ -72,8 +72,6 @@ class Historial{
 }
 let nuevo_historial=[];
 
-mostrar_hitorial();
-
 function datos_tomados(){
     let nombre= document.getElementById("in_nombre").value;
     
