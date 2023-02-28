@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+.header{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-template-areas: "img titulo extra";
+    background-color: blue;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top:0px;
+    justify-items: center;
+    align-items: center;
+}
+.h1{
+    color: white;
+    grid-area: titulo;
+    font-size: 50px;
+}
+.logo{
+    width: 40%;
+    height: 60%;
+    grid-area: img;
+}
+footer{
+    background-color: blue;
+    text-align: right;
+    height: 30px;
+}
+
+.parrafo_footer{
+    color: white;
+    font-size: 10px;
+}
+nav{
+    background-color: rgb(163, 158, 158);
+    position:sticky;
+    top:100px;
+    
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.div_contacto{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 300px 40px;
+    grid-template-areas: "nom nom"
+                         "in_nom in_nom"
+                         "ape ape"
+                         "in_ape in_ape"
+                         "tel tel"
+                         "in_tel in_tel"
+                         "email email"
+                         "in_email in_email"
+                         "comentario comentario"
+                         "tex_com tex_com"
+                         "enviar reset";
+    justify-content: center;
+    align-content: space-evenly;
+}
+.lab_nombre{
+    grid-area: nom;
+    align-self: center;
+    font-size: 18px;
+}
+.input_nombre{
+    grid-area: in_nom;
+    align-self: center;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(205, 201, 201);
+}
+.lab_apellido{
+    grid-area: ape;
+    align-self: center;
+    font-size: 18px;
+}
+.input_apellido{
+    grid-area: in_ape;
+    align-self: center;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(205, 201, 201);
+}
+.lab_telefono{
+    grid-area: tel;
+    align-self: center;
+    font-size: 18px;
+}
+.input_telefono{
+    grid-area: in_tel;
+    align-self: center;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(205, 201, 201);
+    
+}
+.lab_email{
+    grid-area: email;
+    align-self: center;
+    font-size: 18px;
+}
+.input_email{
+    grid-area: in_email;
+    align-self: center;
+    height: 70%;
+    width: 50%;
+    background-color: rgb(205, 201, 201);
+}
+.lab_comentarios{
+    grid-area: comentario;
+    align-self: center;
+    font-size: 18px;
+}
+.tex_comentario{
+    grid-area: tex_com;
+    background-color: rgb(205, 201, 201);
+}
+.btn_enviar{
+    border-radius: 10px;
+    border-width: 0px;
+    grid-area: enviar;
+    align-self: center;
+    width: 40%;
+    height: 60%;
+    background-color: grey;
+}
+.btn_enviar:hover{
+    background-color: rgb(3, 202, 3);
+    color: black;
+    
+}
+.btn_cancelar{
+    border-radius: 10px;
+    border-width: 0px;
+    grid-area: reset;
+    align-self: center;
+    width: 40%;
+    height: 60%;
+    background-color: grey;
+}
+.btn_cancelar:hover{
+    background-color: rgb(247, 48, 48);
+}
+h2{
+    text-align: center;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.main_index{
+    height: 700px;
+    width: 100%;
+}
+.div_index{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 35% 35%;
+    grid-template-areas: "img_primaria parrafo_primario"
+                         "parrafo_2 img_convercion";
+    justify-content: center;
+    align-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.img_principal{
+    grid-area: img_primaria;
+    height: 80%;
+    width: 50%;
+}
+.parrafo_institucion{
+    grid-area: parrafo_primario;
+}
+.img_convercion{
+    grid-area: img_convercion;
+    height: 100%;
+    width: 60%;
+}
+.parrafo_conversion{
+    grid-area: parrafo_2;
+}
+.main_convercion{
+    width: 100%;
+    height: 1000px;
+}
+.div_convercion{
+
+    display: flex;
+    justify-content: space-evenly;    
+}
+.con_tabla{
+   margin:0px auto;
+   margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: blue;
+    color:white;
+}
+tr{
+    border-style: solid;
+    border-width: 1px;
+}
+tr:hover{
+    background-color: rgba(135, 207, 235, 0.745);
+}
+thead{
+    border-bottom: 2px;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+.btn_convertir{
+    border-radius: 10px;
+    border-width:0px;
+    width: 100px;
+    background-color: black;
+    color: white;
+}
+
+.btn_convertir:hover{
+    background-color: rgb(3, 202, 3);
+    color: black;
+}
+.mainsaludo{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "titulo"
+                         "parrafo"
+                         "imagen";
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+.h2_saludo{
+    grid-area: titulo;
+    font-size: 70px;
+}
+.p_saludo{
+    grid-area: parrafo;
+    font-size: 40px;
+}
+.img_saludo{
+    grid-area: imagen;
+}
+.btn_borrar{
+    background-color: red;
+    border-radius: 10px;
+    border-width: 0px;
+    width: 100px;
+}
