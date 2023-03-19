@@ -266,6 +266,7 @@ thead{
 .p_saludo{
     grid-area: parrafo;
     font-size: 40px;
+    color: black;
 }
 .img_saludo{
     grid-area: imagen;
