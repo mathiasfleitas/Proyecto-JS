@@ -30,6 +30,9 @@ body{
     height: 60%;
     grid-area: img;
 }
+.div_header{
+ grid-area: extra;
+}
 footer{
     background-color: blue;
     text-align: right;
@@ -165,7 +168,7 @@ h2{
     padding-bottom: 30px;
 }
 .main_index{
-    height: 700px;
+    height: 1000px;
     width: 100%;
 }
 .div_index{
@@ -272,4 +275,15 @@ thead{
     border-radius: 10px;
     border-width: 0px;
     width: 100px;
+}
+p{
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+h4{
+    color: white;
+}
+.p_idex{
+    color: black;
 }
